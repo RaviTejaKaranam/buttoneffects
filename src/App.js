@@ -1,6 +1,7 @@
 import "./App.css";
-import LineSlideOnHover from "./LineSlideOnHover";
-import OuterBorderOnHover from "./OuterBorderOnHover";
+import ErrorButton from "./ErrorButton/ErrorButton";
+import LineSlideOnHover from "./LineSlideOnHover/LineSlideOnHover";
+import OuterBorderOnHover from "./OuterBorderOnHover/OuterBorderOnHover";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <LineSlideOnHover />
         </div>
         <div className="buttonEffect">
-          <OuterBorderOnHover />
+          <ErrorButton />
         </div>
       </div>
     </div>
