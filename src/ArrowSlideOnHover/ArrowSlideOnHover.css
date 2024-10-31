@@ -1,0 +1,35 @@
+button.arrow-slide-on-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #213555;
+  color: #f5efe7;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.5s all ease;
+}
+.arrow-slide-on-hover span {
+  transition: 0.5s all ease;
+}
+.arrow-slide-on-hover span.arrow {
+  /* position: absolute; */
+  display: none;
+  transition: 0.5s all ease;
+}
+
+button.arrow-slide-on-hover:hover span.arrow {
+  display: block;
+  transform: translateX(10%);
+}
+
+button.arrow-slide-on-hover:hover span {
+  /* opacity: 1; */
+  transform: translateX(-10%);
+}

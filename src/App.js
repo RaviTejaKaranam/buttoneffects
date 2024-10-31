@@ -2,6 +2,7 @@ import "./App.css";
 import ErrorButton from "./ErrorButton/ErrorButton";
 import LineSlideOnHover from "./LineSlideOnHover/LineSlideOnHover";
 import OuterBorderOnHover from "./OuterBorderOnHover/OuterBorderOnHover";
+import ArrowSlideOnHover from "./ArrowSlideOnHover/ArrowSlideOnHover";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </div>
         <div className="buttonEffect">
           <ErrorButton />
+        </div>
+        <div className="buttonEffect">
+          <ArrowSlideOnHover />
         </div>
       </div>
     </div>
