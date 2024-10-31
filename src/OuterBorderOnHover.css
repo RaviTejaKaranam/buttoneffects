@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+button.outer-border-on-hover {
+  font-family: "Poppins", sans-serif;
+  background: #78c1f3;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  color: rgb(65, 64, 64);
+}
+
+button.outer-border-on-hover:hover {
+  color: #066eb3;
+}
+
+button.outer-border-on-hover:hover {
+  color: #066eb3;
+}
+
+button.outer-border-on-hover::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0%;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s all ease;
+}
+button.outer-border-on-hover:hover::before {
+  height: 100%;
+  background: #066eb3;
+}
+button.outer-border-on-hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  top: 0;
+  right: 0;
+  transition: 0.5s all ease;
+}
+button.outer-border-on-hover:hover::after {
+  width: 100%;
+  background: #066eb3;
+}
+button.outer-border-on-hover span {
+  display: inline-block;
+  padding: 16px 32px;
+  position: relative;
+}
+button.outer-border-on-hover span::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0%;
+  right: 0;
+  top: 0;
+  transition: 0.5s all ease;
+}
+button.outer-border-on-hover span:hover::before {
+  height: 100%;
+  background: #066eb3;
+}
+button.outer-border-on-hover span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s all ease;
+}
+button.outer-border-on-hover span:hover::after {
+  width: 100%;
+  background: #066eb3;
+}
